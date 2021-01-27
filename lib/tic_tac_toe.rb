@@ -78,9 +78,7 @@ end
 def turn
   user_input = gets.chomp
   array_index = input_to_index(user_input)
-  binding.pry 
   if !valid_move?(array_index)
-    binding.pry 
     turn 
 end 
 over?
