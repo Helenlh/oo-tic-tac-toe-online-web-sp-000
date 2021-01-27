@@ -78,16 +78,22 @@ end
 def turn
   user_input = gets.chomp
   array_index = input_to_index(user_input)
-   over?
-  if !valid_move?(array_index)
-    #goes back to the beginning of the turn method to get another user_input
-    turn 
-  end 
-  player = current_player 
-  move(array_index, player) 
-  display_board 
+#   if !valid_move?(array_index)
+#     #goes back to the beginning of the turn method to get another user_input
+#     turn 
+# end 
+over?
+#   player = current_player 
+#   move(array_index, player) 
+#   display_board
+if valid_move?(array_index)
+   player = current_player 
+   move(array_index, player) 
+   display_board
+else
+  turn 
 end 
- 
+ end 
 
 
 def won?
