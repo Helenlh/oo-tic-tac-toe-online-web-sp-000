@@ -85,6 +85,7 @@ over?
 player = current_player 
 move(array_index, player) 
 display_board
+binding.pry 
 end 
 
 
