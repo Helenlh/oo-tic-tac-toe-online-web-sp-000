@@ -45,8 +45,7 @@ def play
     while !over?
     turn 
    end
-   won?
-      puts "Congratulations !" 
+      puts "Congratulations #{winner}!" 
       over?
 end 
 
