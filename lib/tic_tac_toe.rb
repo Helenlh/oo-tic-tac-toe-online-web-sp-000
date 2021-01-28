@@ -42,9 +42,10 @@ end
   end
 
 def play
+    while !over?
     turn 
-    draw?
-      over? 
+    # draw?
+    #   over? 
     won?
       puts "Congratulations !" 
       over?
@@ -81,7 +82,7 @@ def turn
   if !valid_move?(array_index)
     turn 
 end 
-over?
+#over?
 player = current_player 
 move(array_index, player) 
 display_board
