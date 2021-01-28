@@ -45,8 +45,10 @@ def play
     while !over?
     turn 
    end
-      won? puts "Congratulations #{winner}!" 
-      puts "Cat's Game!"
+      if won? 
+      puts "Congratulations #{winner}!" 
+      else 
+        puts "Cat's Game!"
       over?
 end 
 
