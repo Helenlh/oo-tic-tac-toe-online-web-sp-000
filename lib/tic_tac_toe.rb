@@ -85,7 +85,7 @@ player = current_player
 move(array_index, player) 
 display_board
 end  
-
+ 
 
 def won?
      WIN_COMBINATIONS.each do |array|
