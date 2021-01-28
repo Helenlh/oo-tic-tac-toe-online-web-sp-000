@@ -103,12 +103,7 @@ end
 
 
 def draw? 
-  if won?
-    false 
- elsif !won? && full? 
- puts "Cat's Game"
- true 
-  end
+  full? && !won?
 end 
 
 
