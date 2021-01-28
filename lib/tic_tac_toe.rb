@@ -85,7 +85,7 @@ over?
 player = current_player 
 move(array_index, player) 
 display_board
-end 
+end  
 
 
 def won?
